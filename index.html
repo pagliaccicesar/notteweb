@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <link  rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="Navbar">
+        <div class="container">
+          <!--<div class="Logo">notte.</div>-->
+          <div class="logo"><img src="./img/logo_notte.png" alt=""></div>
+  
+          <div id="menu" class="menu">
+            <header class="inline">
+              
+              <div class="Logo">notte.</div>
+              <button
+                id="closeMenuBtn"
+                title="Close Menu"
+                aria-label="Close Menu"
+                class="NavButton"
+              >
+                <i class="ri-close-line"></i>
+              </button>
+            </header>
+  
+            <a href="#" class="NavLink">Home</a>
+            <a href="#schedules" class="NavLink">Agenda</a>
+            <a href="#sets" class="NavLink">Sets</a>
+            <a href="#about" class="NavLink">About</a>
+          </div>
+  
+          <button
+            id="openMenuBtn"
+            title="Open Menu"
+            aria-label="Open Menu"
+            class="NavButton"
+          >
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+      </nav>
+      <main>
+        <section id="home">
+          <div class="hero">
+            <div class="visual">
+              <picture>
+                <source
+                srcset="./img/foto_night.jpg"                  
+                  type="image/avif"
+                  media="(width > 1024px)"
+                />
+                <source
+                  srcset="./img/disco2_movil.jpg"
+                  type="image/avif"
+                />
+                <source
+                  srcset="./img/foto_night.jpg"
+                  media="(width > 1024px)"
+                  type="image/webp"
+                />
+                <img
+                  src="./img/disco2_movil.jpg"
+                  alt="fitness" 
+                />
+              </picture>
+            </div>
+  
+            <div class="content">
+                <!--<a class="neon" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    BUENOS AIRES HOUSE DISCO
+                </a>-->
+
+              <h1><span>Bs As disco pop</span></h1>
+              <div class="wrapper" >
+                <a href="#discover" style="margin: 150px 0;" class="LinkButton Primary"> DESCUBRIR + </a>
+              </div>
+            </div>
+          </div>
+  
+          <div id="discover" class="fold">
+            <div class="subject">
+              <p>
+                Comienza otro finde,
+                <span style="color: var(--brand-1)"
+                  >una nueva oportunidad para esculpir la mejor versión de vos mismo.</span>
+                  A traves de NOTTE, conoce todas las propuestas de fiestas pop & disco.        
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <section id="schedules" class="schedule">
+          <div class="subject">
+            <div class="container">
+              <div class="table-wrapper">
+                <h2>This week</h2>
+                <table>
+                  <tr>
+                    <th>Día</th>
+                    <th>Scheduled Event</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>Dj Honorio New York bar</td>
+                    <td>9:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>90' house party New York bar</td>
+                    <td>9:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>90' house party Human</td>
+                    <td>9:30 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>Dj Diogenes El Cielo Pub</td>
+                    <td>7:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>Dj Diogenes El Cielo Pub</td>
+                    <td>7:00 PM</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="table-wrapper">
+                <h2>Next week</h2>
+                <table>
+                  <tr>
+                    <th>Día</th>
+                    <th>Scheduled Event</th>
+                    <th>Time</th>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>Dj Diogenes Mitre Bar</td>
+                    <td>8:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>80' disco party New York bar</td>
+                    <td>8:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>Dj Nino Molino</td>
+                    <td>6:30 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>Dj Nino Molino</td>
+                    <td>6:30 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>Dj Nino New York bar</td>
+                    <td>8:00 PM</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="showcase">
+            <video
+              autoplay
+              loop
+              muted
+              poster="./img/notte.png"
+              role="none"
+            >
+                <source src="./video/set1.mp4" type="video/mp4"/>
+              <!--<source src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/demo.mp4" type="video/mp4" />-->
+            </video>
+            <img src="./img/notte.png" alt="">
+            <!--<img src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/rhythm.png" alt="Rhythm" />-->
+          </div>
+        </section>
+  
+        <section id="sets" class="cards">
+          <div class="subject">
+            <div class="container">
+              <a href="#" class="Card">
+                <i class="ri-team-line"><img src="./img/brasil.png" alt=""></i>
+                <div>
+                  <h2>El Cielo Pub</h2>
+                  <ul>
+                    <li>DJ Set: Natalia Natalia</li>
+                    <br>                    
+                    <iframe width="210" height="119" src="https://www.youtube.com/embed/dhlq5A8Wu0Q?si=Mpj1HbRnqu3v5SdA&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!--<li>Heaviest Deadlift: 250 lbs</li>
+                    <li>Longest Plank: 3 min</li>-->
+                  </ul>
+                </div>
+              </a>
+              <a href="#" class="Card">
+                <i class="ri-team-line"><img src="./img/argentina.png" alt=""></i>
+                <div>
+                  <h2>New York bar</h2>
+                  <ul>
+                    <li>DJ Set: Natalia Natalia</li>
+                    <br>
+                    <iframe width="210 " height="119" src="https://www.youtube.com/embed/2uMYU1LXS3w?si=uUiQwMkeBwoEv8zy&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!--<li>1000 Pushups in a Month</li>
+                    <li>Swim 20km in a Month</li>-->
+                  </ul>
+                </div>
+              </a>
+
+              <a href="#" class="Card">
+                <i class="ri-team-line"><img src="./img/canada.png" alt=""></i>
+                <div>
+                  <h2>New York bar</h2>
+                  <ul>
+                    <li>DJ Set: Natalia Natalia</li>
+                    <br>
+                    <iframe width="210" height="119" src="https://www.youtube.com/embed/ufGLhImwnYg?si=4YwZdf48NTvWVGyM&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!--<li>Mike completed the 30-Day Running Streak Challenge!</li>
+                    <li>Anna shared a new workout: 'Hill Sprints Interval'.</li>-->
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+  
+        <section id="about" class="about">
+          <div id="target-word">love</div>
+
+          <!--<ul class="nav__list">                   
+              <li class="nav__item"><a class="nav__link" href="https://www.instagram.com/laotraradio_/" target="_blank"><img src="./img/instag.png" alt="instagram"></a></li>              
+              <li class="nav__item"><a class="nav__link" href="https://www.youtube.com/@laotraradio_" target="_blank"><img src="./img/youtu.png" alt="yuotube"></a></li>
+              <li class="nav__item"><a class="nav__link" href="https://on.soundcloud.com/erT7H" target="_blank"><img src="./img/soundcloud.png" alt="soundcloud"></a></li>
+              <li class="nav__item"><a class="nav__link" href="https://on.soundcloud.com/erT7H" target="_blank"><img src="./img/twicht.png" alt="twicht"></a></li>
+          </ul>   -->
+
+          <footer>
+            <div class="footer">
+              <div class="footer_about">
+                <h3>About Us</h3>
+                <p style="font-size: small;">Somos un equipo de melomanos en búsqueda permanente de espacios de música, para difundir y compartir en Buenos Aires.<br>
+                Contactanos si estas interesad@ en dar a conocer tu fiesta.</p>
+              </div>
+              <div class="footer_main">
+                <h3>Quick Contact</h3>
+                <ul style="list-style-type: none;">
+                  <li style="color:rgb(118, 117, 117)">+54 9 1159483403</li>
+                  <li style="color:rgb(118, 117, 117)">contacto@notte.com.ar</li>
+                  <li style="padding-left: 3.5rem; padding-top: 0.5rem;"><img src="./img/argentina.png" alt=""></li>
+                  
+                </ul>
+              </div>
+              <div class="footer_right">
+                <div class="footer_links">
+                  <ul class="nav__list">                   
+                    <li class="nav__item"><a class="nav__link" href="https://www.instagram.com/laotraradio_/" target="_blank"><img src="./img/instag.png" alt="instagram"></a></li>                    
+                    <li class="nav__item"><a class="nav__link" href="https://on.soundcloud.com/erT7H" target="_blank"><img src="./img/soundcloud.png" alt="soundcloud"></a></li>
+                    <!--<li class="nav__item"><a class="nav__link" href="https://on.soundcloud.com/erT7H" target="_blank"><img src="./img/youtube1.png" alt="twicht"></a></li>-->
+                </ul>
+                </div>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>
+                Notte pop & disco music. Website desarrollado por
+                <a
+                  href="https://pagliacci.ar" target="_blank"
+                  style="color: var(--brand-1); text-decoration: none"
+                  >Cesar Pagliacci</a
+                >
+                dev web.
+              </p>
+              
+            </div>
+          </footer>
+       
+           
+          
+            <!--<p>
+              Notte pop & disco music. Website desarrollado por
+              <a
+                href="https://pagliacci.ar" target="_blank"
+                style="color: var(--brand-1); text-decoration: none"
+                >Cesar Pagliacci</a
+              >
+              dev web.
+            </p>-->
+          
+        </section>
+      </main>
+     
+
+
+
+
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
