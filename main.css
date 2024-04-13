@@ -336,19 +336,16 @@ h1 span:nth-child(4){
 
   /***************  agenda********************************/
   .barras {
-    margin: 0 auto;
-    background: white;    
-    text-align: center;    
+    margin: 0 auto;    
     width: 80%;
     margin: 0 auto;
-  } 
-  
+  }  
   .loader {
     margin: 0 0 1em;
-    height: 20px;
+    height: 10px;
     width: 20%;
     text-align: center;
-    padding: 1em;    
+    padding-top: 3em;
     display: inline-block;
     vertical-align: top;
   }
