@@ -349,11 +349,7 @@ h1 span:nth-child(4){
     display: inline-block;
     vertical-align: top;
   }
-  /*
-    Set the color of the icon
-  */
-  svg path,
-  svg rect {
+  svg path, svg rect {
     fill: #df0606;
   }
   
